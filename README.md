@@ -1,9 +1,9 @@
 # Insomnia Features
 
 ## Parte 1
-O Insomnia é uma plataforma colaborativa de desenvolvimento de API de código aberto que facilita a criação de APIs de alta qualidade. Ela pode ser usada para envio de requisições REST, SOAP, GraphQ e GRPC. Com esta ferramenta é possível realizar a documentação, automação e com a sua versão CLI tools é possível implementar até testes em pipeline.
+O Insomnia é uma plataforma colaborativa de desenvolvimento de API de código aberto que facilita a criação de APIs de alta qualidade. Ela pode ser usada para envio de requisições REST, SOAP, GraphQ e GRPC. Com essa ferramenta é possível realizar documentação e automação. Com a sua versão CLI tools é possível implementar até testes em pipeline.
 
-Empresas como cisco, Facebook, Tesla, Netflix, entre outras utilizam dessa plataforma para desenvolvimento. 
+Empresas como cisco, Facebook, Tesla, Netflix, entre outras, utilizam essa plataforma durante o desenvolvimento. 
 
 ### Criando API Fake para usar o Insomnia
   - Pra usar o Insomnia, precisamos de uma API. Nesse caso nós vamos usar o JSON Server
