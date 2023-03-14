@@ -127,7 +127,7 @@ Empresas como cisco, Facebook, Tesla, Netflix, entre outras, utilizam essa plata
   - Para fazer o botão:
     1. Gerar uma exportação do Insomnia e colocar o `export.json` no repositório no git
     2. Colocar a URL do export no gerador do botão nesse [link](https://insomnia.rest/create-run-button)
-    3. Copie o Markdown gerado e você pode colocá-lo no README do seu repositório do Git Hub. Fica dessa forma:          
+    3. Copie o Markdown gerado e você pode colocá-lo no README do seu repositório no Git Hub. Fica dessa forma:          
       [![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Teste%20Insomnia&uri=https%3A%2F%2Fgithub.com%2Finsodoc%2Finsomnia-documenter%2Fblob%2Fmaster%2Fpackage.json)
   - Com o plano pago do Insomnia, é possível ter as rotas atualizadas em tempo real e em todas as máquinas da equipe com tudo criptografado
 
