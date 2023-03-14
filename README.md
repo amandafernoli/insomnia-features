@@ -8,7 +8,7 @@ Empresas como cisco, Facebook, Tesla, Netflix, entre outras, utilizam essa plata
 ### Criando API Fake para usar o Insomnia
   - Pra usar o Insomnia, precisamos de uma API. Nesse caso nós vamos usar o JSON Server
   - O [JSON Server](https://github.com/typicode/json-server) cria uma API fake baseada num arquivo `data.json`
-    - Vamos criar usuário e products para dados iniciais no `data.json`
+    - Vamos criar users e products para dados iniciais no `data.json`
 
       ```json
       {
