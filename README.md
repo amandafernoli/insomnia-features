@@ -25,8 +25,9 @@ Empresas como cisco, Facebook, Tesla, Netflix, entre outras, utilizam essa plata
     
     - Para iniciar o JSON Server, vamos usar o seguinte comando: 
       ```sh
-      json-server data.json -p 3333 -d 500 -w  #-p porta, -d é o delay na resposta, -w modo watch
+      json-server data.json -p 3333 -d 500 -w
       ```
+    - `-p` é porta, `-d` é o delay na resposta, `-w` é modo watch
 
 ### Criando algumas requisições iniciais
   - Vamos criar pastas de Users e Products no Insomnia
