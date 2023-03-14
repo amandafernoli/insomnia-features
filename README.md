@@ -1,10 +1,10 @@
 # Insomnia Features
 
-## Parte 1
 O Insomnia é uma plataforma colaborativa de desenvolvimento de API de código aberto que facilita a criação de APIs de alta qualidade. Ela pode ser usada para envio de requisições REST, SOAP, GraphQ e GRPC. Com essa ferramenta é possível realizar documentação e automação. Com a sua versão CLI tools é possível implementar até testes em pipeline.
 
 Empresas como cisco, Facebook, Tesla, Netflix, entre outras, utilizam essa plataforma durante o desenvolvimento. 
 
+## Parte 1
 ### Criando API Fake para usar o Insomnia
   - Pra usar o Insomnia, precisamos de uma API. Nesse caso nós vamos usar o JSON Server
   - O [JSON Server](https://github.com/typicode/json-server) cria uma API fake baseada num arquivo `data.json`
@@ -31,7 +31,7 @@ Empresas como cisco, Facebook, Tesla, Netflix, entre outras, utilizam essa plata
 
 ### Criando algumas requisições iniciais
   - Vamos criar pastas de Users e Products no Insomnia
-  - Fazer a listagem de usuários e produtos cadastrados.
+  - Fazer a listagem de usuários e produtos cadastrados
   - Criar requisições `GET Users` e `GET Products` como List no Insomnia
   - Colocar a seguinte URL no Insomnia `http://localhost:3333/users` e fazer a listagem
   - Criar rota Create: `POST Products`
@@ -41,7 +41,7 @@ Empresas como cisco, Facebook, Tesla, Netflix, entre outras, utilizam essa plata
       "price": 8.50
     }
     ```
-  - O `id` é gerado automaticamente pelo JSON Server, então não precisa colocar nesse caso.
+  - O `id` é gerado automaticamente pelo JSON Server, então não precisa colocar nesse caso
 
 ## Parte 2
 ### Criando variáveis no Insomnia
@@ -95,7 +95,7 @@ Empresas como cisco, Facebook, Tesla, Netflix, entre outras, utilizam essa plata
   - Para rotas de autenticação, a funcionalidade de When Expired é muito útil. Como, por exemplo, para trazer o token JWT toda vez que ele expirar
   - Também é possível colocar a Response com um cookie no Header de outra requisição
   - Também é possível trazer dados do Header das requisições
-  - Também é possível colocar prompt para o usuário digitar o valor. 
+  - Também é possível colocar prompt para o usuário digitar o valor
     - No body da requisição `PATCH Product` coloque `price: contrl+space` e selecione Prompt
     - Title: `price`
     - Label: `Preço`
