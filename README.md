@@ -41,14 +41,14 @@ Empresas como cisco, Facebook, Tesla, Netflix, entre outras, utilizam essa plata
       "price": 8.50
     }
     ```
-  - O `id` é gerado automaticamente pelo Json server, então não precisa colocar nesse caso.
+  - O `id` é gerado automaticamente pelo JSON Server, então não precisa colocar nesse caso.
 
 ## Parte 2
 ### Criando variáveis no Insomnia
   - E se um dia a _base URL_ mudasse e eu precisasse alterar em todas as rotas no Insomnia? Ia ser inviável ter que alterar manualmente passando uma por uma
   - Para isso, é possível criar variáveis por ambiente ou globais 
   - Variáveis em Base Enviroments (globais) são variáveis que devem ser compartilhadas com toda a aplicação
-  - Variáveis em Sub Enviroments são indicadas para serem excluivas do ambiente. Como de produção, staging ou desenvolvimento
+  - Variáveis em Sub Enviroments são indicadas para serem exclusivas do ambiente. Como de produção, staging ou desenvolvimento
     - Vamos criar variáveis em sub enviroments de desenvolvimento e staging
       ```json
       "development": {
@@ -64,7 +64,7 @@ Empresas como cisco, Facebook, Tesla, Netflix, entre outras, utilizam essa plata
   
 ###  Funções
   - Criar o recurso `POST Orders` como Create
-  - Colocar as variáveis url e resource na rota
+  - Colocar as variáveis `url` e `resource` na rota
   - Também é muito útil colocar data, id, ou talvez um base64 como um dado do body
     - Colocar o body:
       ```json
@@ -73,12 +73,12 @@ Empresas como cisco, Facebook, Tesla, Netflix, entre outras, utilizam essa plata
         "uuid": "Press Ctrl+Space uuid versão 4"
       }
       ```
-  - Suponhamos que queremos alterar um único campo de um produto, nesse caso vamos usar o `PATCH`
+  - Suponhamos que queremos alterar um único campo de um produto. Nesse caso vamos usar o `PATCH`
     - Criar o recurso `PATCH Products` como Update
     - Colocar o `id` na rota. Atualizar um produto alterando um campo no body
     - Criar o recurso `DELETE Products` como Delete
     - Colocar o `id` na rota
-  - Suponhamos que você que fazer testes e garantir que a rota de delete sempre apague um produto que exista. De preferência um que acabou de ser criado. Vamos criar uma forma de fazer isso usando Chain Request
+  - Suponhamos que você queira fazer testes e garantir que a rota de delete sempre apague um produto que exista. De preferência um que acabou de ser criado. Vamos criar uma forma de fazer isso usando Chain Request
 
 ### Chain Requests
   - Nós vamos criar um produto toda vez pro delete apagar ele logo em seguida 
@@ -94,16 +94,16 @@ Empresas como cisco, Facebook, Tesla, Netflix, entre outras, utilizam essa plata
   - Nós vamos selecionar a opção de Always para que ele crie um produto toda vez que a rota de Delete for chamada
   - Para rotas de autenticação, a funcionalidade de When Expired é muito útil. Como, por exemplo, para trazer o token JWT toda vez que ele expirar
   - Também é possível colocar a Response com um cookie no Header de outra requisição
-  - Também é possível trazer dados não só de resposta da requisição
+  - Também é possível trazer dados do Header das requisições
   - Também é possível colocar prompt para o usuário digitar o valor. 
-    - No body da requisição `PATCH Product` coloque `price: contrl+space` e selecione prompt
-    - Titulo é o identificador: `price`
+    - No body da requisição `PATCH Product` coloque `price: contrl+space` e selecione Prompt
+    - Title: `price`
     - Label: `Preço`
     - Default Value: `0`
     - Armazenar o valor até fechar a aplicação para não ter que digitar de novo
-      - Storage Key: `price`
-    - Desmarcar o Mask Text é pra quando o valor for do tipo password e fique com estrelinhas: `********`
-    - Deixar marcado o Default to last value para ficar com o valor padrão como o último que foi digitado
+    	- Storage Key: `price`
+    - Desmarcar o Mask Text. É pra quando o valor for do tipo password e fique com estrelinhas: `********`
+    - Deixar marcado o Default to Last Value para ficar com o valor padrão como o último que foi digitado
     - Quando clicar em Send, ele pede um valor para digitar
 
 ## Parte 3 
@@ -115,19 +115,19 @@ Empresas como cisco, Facebook, Tesla, Netflix, entre outras, utilizam essa plata
   - Do lado tem o histórico de filtros e do lado tem uma pequena documentação pra fazer filtros
 
 ### Histórico de requests
-  - No canto da tela à direita, podemos ver o histórico com a requisição e as respostas delas
+  - No canto da tela à direita, podemos ver o histórico das requisições feitas com a requisição completa e a respectiva resposta
 
 ### Exportar requisições
   - Podemos exportar todas as requisições e passar pra pessoas da equipe 
-  - Insomnia v4 JSON
+  - Selecionar a opção de Insomnia v4 JSON
 
 ### Botão Insomnia
-  - E ainda melhor que exportar, é possível criar um botão pra pessoa automaticamente importar dentro do Insomnia dela através de um botão
+  - E ainda melhor que exportar, é possível criar um botão pra pessoa automaticamente importar dentro do Insomnia dela através dele
   - [Run-in Insomnia Button](https://docs.insomnia.rest/insomnia/run-in-insomnia-button)
   - Para fazer o botão:
     1. Gerar uma exportação do Insomnia e colocar o `export.json` no repositório no git
-    2. Colocar a URL do export no gerador de botão no link
-    3. Gera um Markdown que é possível colocar no Git Hub          
+    2. Colocar a URL do export no gerador do botão nesse [link](https://insomnia.rest/create-run-button)
+    3. Copie o Markdown gerado e você pode colocá-lo no README do seu repositório do Git Hub. Fica dessa forma:          
       [![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Teste%20Insomnia&uri=https%3A%2F%2Fgithub.com%2Finsodoc%2Finsomnia-documenter%2Fblob%2Fmaster%2Fpackage.json)
   - Com o plano pago do Insomnia, é possível ter as rotas atualizadas em tempo real e em todas as máquinas da equipe com tudo criptografado
 
