@@ -1,0 +1,37 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Amanda Fernandes",
+      "email": "amandafernoli@outlook.com"
+    }
+  ],
+  "products": [
+    {
+      "title": "Coca-cola",
+      "price": 8.5,
+      "id": 1
+    },
+    {
+      "title": "Suco",
+      "price": 8.5,
+      "id": 2
+    },
+    {
+      "title": "Garrafa de água",
+      "price": 8.5,
+      "id": 3
+    },
+    {
+      "title": "Garrafa de água",
+      "price": "10",
+      "id": 4
+    }
+  ],
+  "orders": [
+    {
+      "date": "2023-03-28T16:48:23.872Z",
+      "id": "e3c09920-828c-4788-8199-783d990e0a10"
+    }
+  ]
+}
