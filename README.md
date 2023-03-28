@@ -128,8 +128,8 @@ Empresas como cisco, Facebook, Tesla, Netflix, entre outras, utilizam essa plata
   - E ainda melhor que exportar, é possível criar um botão pra pessoa automaticamente importar dentro do Insomnia dela através dele
   - [Run-in Insomnia Button](https://docs.insomnia.rest/insomnia/run-in-insomnia-button)
   - Para fazer o botão:
-    1. Gerar uma exportação do Insomnia e 
-    2. Colocar o `export.json` no repositório no git
+    1. Gerar uma exportação do Insomnia
+    2. Colocar o `export.json` na pasta do repositório da Apresentação Insomnia
     3. Dar um push no seu repositório com o arquivo 
     4. Colocar a URL do export no gerador do botão nesse [link](https://insomnia.rest/create-run-button)
     5. Copie o Markdown gerado e você pode colocá-lo no README do seu repositório no Git Hub. Fica dessa forma:          
