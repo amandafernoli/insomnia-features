@@ -133,7 +133,7 @@ Empresas como cisco, Facebook, Tesla, Netflix, entre outras, utilizam essa plata
     3. Dar um push no seu repositório com o arquivo 
     4. Colocar a URL do export no gerador do botão nesse [link](https://insomnia.rest/create-run-button)
     5. Copie o Markdown gerado e você pode colocá-lo no README do seu repositório no Git Hub. Fica dessa forma:          
-      [![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Teste%20Insomnia&uri=https%3A%2F%2Fgithub.com%2Finsodoc%2Finsomnia-documenter%2Fblob%2Fmaster%2Fpackage.json)
+    	[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=teste%20API&uri=https%3A%2F%2Fraw.githubusercontent.com%2Famandafrnoli%2Finsomnia-features%2Fmaster%2Fexport-insomnia.json)
   - Com o plano pago do Insomnia, é possível ter as rotas atualizadas em tempo real e em todas as máquinas da equipe com tudo criptografado
 
 
